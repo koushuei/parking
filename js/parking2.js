@@ -119,7 +119,7 @@ function creatMarker(place) {
     infowindow.open(map, this);
     var str = '';
     str =str ='<li>'+ place['停車場名稱'] + '</li><li>' + place['型式'] + '</li><li>' + place['停車場位置']+
-    '</li><li><button type="button" onclick="favor()">加入我的最愛</button></li>';
+    '</li>';
     document.querySelector('.attr').innerHTML = str;
     howtogo_map(currentLocation, place);
   });
