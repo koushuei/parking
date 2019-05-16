@@ -118,8 +118,8 @@ function creatMarker(place) {
     infowindow.setContent(place['停車場名稱']);
     infowindow.open(map, this);
     var str = '';
-    str =str ='<li>'+ place['停車場名稱'] + '</li><li>' + place['型式'] + '</li><li>' + place['停車場位置']+
-    '</li>';
+    str =str ='<li>名稱：'+ place['停車場名稱'] + '</li><li>型式：' + place['型式'] + '</li><li>地址：' + place['停車場位置']+
+    '</li><li>收費標準：'+place['收費標準'] +'</li>';
     document.querySelector('.attr').innerHTML = str;
     howtogo_map(currentLocation, place);
   });
